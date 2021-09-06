@@ -4,17 +4,17 @@
 cmake_minimum_required(VERSION 2.6)
 
 option(ANDROID "Enables a build for Android" OFF)
-option(USE_EGL "Enables EGL OpenGL Interface" OFF)
-option(USE_X11 "Enables X11 Support" ON)
+option(USE_EGL "Enables EGL OpenGL Interface" ON)
+option(USE_X11 "Enables X11 Support" OFF)
 option(USE_WAYLAND "Enables Wayland Support" OFF)
-option(USE_UPNP "Enables UPnP port mapping support" ON)
+option(USE_UPNP "Enables UPnP port mapping support" OFF)
 option(DISABLE_WX "Disable wxWidgets (use CLI interface)" OFF)
-option(ENABLE_PCH "Use PCH to speed up compilation" ON)
+option(ENABLE_PCH "Use PCH to speed up compilation" OFF)
 
 option(FASTLOG "Enable all logs" OFF)
 option(OPROFILING "Enable profiling" OFF)
 option(OPENMP "Enable OpenMP parallelization" ON)
-option(ENCODE_FRAMEDUMPS "Encode framedumps in AVI format" ON)
+option(ENCODE_FRAMEDUMPS "Encode framedumps in AVI format" OFF)
 ########################################
 # Optional Targets
 # TODO: Add DSPSpy and TestSuite.
