@@ -134,6 +134,7 @@ endif()
 #add_definitions(-D_M_GENERIC=1)
 # Various compile flags
 if(NOT _M_GENERIC)
+	add_definitions(-msimd128)
 	add_definitions(-msse2)
 endif()
 
